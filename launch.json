@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run ShopEasy",
+            "request": "launch",
+            "mainClass": "com.shop.ShopApp",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "serverReadyAction": {
+                "pattern": "running at http://localhost:([0-9]+)",
+                "uriFormat": "http://localhost:%s",
+                "action": "openExternally"
+            }
+        },
+        {
+            "type": "java",
+            "name": "Run Tests",
+            "request": "launch",
+            "mainClass": "com.shop.SmokeTest",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole"
+        }
+    ]
+}
